@@ -8,16 +8,14 @@
 
     <ImageView
         android:id="@+id/SV2imageView"
-        android:layout_width="350dip"
-        android:layout_height="350dip"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="300dip"
+        android:layout_height="300dip"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_baseline_18mp_24"
         app:tint="@color/tanAccent" />
+
 
     <TextView
         android:id="@+id/SV2TV1BPname"
@@ -62,33 +60,26 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:tint="@color/tanAccent" />
 
-    <!--NEWBUTTONBELOW-->
-    <Button
-        android:id="@+id/newButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onNewButtonClick"
-        android:text="Button"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="381dp"
-        tools:ignore="OnClick" />
+
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="608dp"
-        tools:layout_editor_absoluteY="122dp"
-        android:layout_marginTop="70dp"
+        android:layout_width="450dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="@+id/SV2imageView"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/SV2imageView"
-        app:layout_constraintTop_toBottomOf="@+id/SV2imageView"
+        app:layout_constraintTop_toBottomOf="@+id/SV2TV1BPname"
+        android:paddingBottom="50dp"
+
 
         >
 
         <LinearLayout
+            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
             <!--  BELOW IS DESCRIPTION-->
             <TextView
 
@@ -102,9 +93,73 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:layout_gravity="center_horizontal"
-                app:tint="@color/tanAccent" />
+                app:tint="@color/tanAccent"
+                android:layout_marginBottom="20dp"
+                 />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+
+            <Button
+                android:id="@+id/previousButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="320dp"
+                android:onClick="previousButtonClick"
+                android:text="Last"
+                android:layout_marginStart="50dp"
+                android:layout_gravity="start"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/SV2TVdescription"
+                app:tint="@color/tanAccent"
+                android:layout_weight="1"/>
+
+            <Space
+                android:id="@+id/invisibleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="320dp"
+                android:layout_gravity="center_horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                app:layout_constraintTop_toBottomOf="@+id/SV2TVdescription"
+                app:tint="@color/tanAccent"
+                android:layout_weight="4"/>
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="320dp"
+                android:onClick="nextButtonClick"
+                android:text="Next"
+
+                android:layout_marginEnd="50dp"
+                android:layout_gravity="end"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+               app:layout_constraintTop_toBottomOf="@+id/SV2TVdescription"
+                app:tint="@color/tanAccent"
+                android:layout_weight="1" />
+        </LinearLayout>
 
         </LinearLayout>
+        <!--NEWBUTTONBELOW-->
+
     </ScrollView>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

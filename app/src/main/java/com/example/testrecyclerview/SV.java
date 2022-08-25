@@ -2,7 +2,10 @@ package com.example.testrecyclerview;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,8 +40,19 @@ public class SV extends AppCompatActivity{
         SV2Image.setImageResource(image);
     }
 
-    public void onNewButtonClick() {
-        Toast.makeText(SV.this, "TOAST CLICKED", Toast.LENGTH_SHORT).show();
+    public void previousButtonClick(View view) {
+        Toast.makeText(SV.this, "Previous CLICKED", Toast.LENGTH_SHORT).show();
+        Log.i("SV", "button pressed");
+        Intent intent = new Intent(SV.this, MainActivity.class);
+        intent.putExtra("NAME", bridgeModelsArrayList.get(position).getBridgePartName());
+        intent.putExtra("ABBR_BIG", bridgeModelsArrayList.get(position).getBridgePartAbbreviation());
+        intent.putExtra("ABBR_SMALL", bridgeModelsArrayList.get(position).getBridgePartAbbreviationSmall());
+        intent.putExtra("DESCRIPTION", bridgeModelsArrayList.get(position).getDescription());
+
+    }
+    public void nextButtonClick(View view) {
+        Toast.makeText(SV.this, "Next CLICKED", Toast.LENGTH_SHORT).show();
+        Log.i("SV", "button pressed");
 
     }
 }
