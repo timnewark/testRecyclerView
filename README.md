@@ -1,9 +1,19 @@
+[# SQLiteDemo
+Backup/Demo app for SQLite DB integration with java based android app
+WIP
 
 
-<p>
-    <img src="master/Screenshot_1.png"/>
-</p>
-![ScreenShot](https://github.com/timnewark/test/blob/master/Screenshot_1.png)
-![ScreenShot](https://github.com/timnewark/test/blob/master/Screenshot_20220825-105822.png)
+## Screenshots:
 
-![image description or alt text](https://raw.github.com/timnewark/test/blob/master/Screenshot_20220825-105822.png)
+* Main Screen:
+
+<div>
+  <img src="https://raw.githubusercontent.com/timnewark/testRecyclerView/master/Screenshot_1.png" alt="Main Screen" height="700dp">
+</div>
+
+
+* RV screen example (nightmode):
+
+<div>
+  <img src="https://raw.githubusercontent.com/timnewark/testRecyclerView/master/Screenshot_20220825-105822.png" alt="Main Screen" height="700dp">
+</div>
