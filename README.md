@@ -1,5 +1,4 @@
-[# SQLiteDemo
-Backup/Demo app for SQLite DB integration with java based android app
+Test Recycler View/binding/fragments 
 WIP
 
 
@@ -10,8 +9,9 @@ WIP
 <div>
   <img src="https://raw.githubusercontent.com/timnewark/testRecyclerView/master/Screenshot_1.png" alt="Main Screen" height="700dp">
 </div>
-
-
+<br>
+<br>
+<br>
 * RV screen example (nightmode):
 
 <div>
