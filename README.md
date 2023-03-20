@@ -16,7 +16,7 @@ WIP
 <br>
 * RecyclerView screen example (nightmode):
 <br>
-
+<br>
 <div>
   <img src="https://raw.githubusercontent.com/timnewark/testRecyclerView/master/Screenshot_20220825-105822.png" alt="Main Screen" height="700dp">
 </div>
